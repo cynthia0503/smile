@@ -48,7 +48,7 @@ const swiper1 = new Swiper('.case-slider .swiper', {
 // offer
 const swiper2 = new Swiper('.price-slider .swiper', {
   loop: true,
-  spaceBetween: 0,
+  spaceBetween: 10,
   pagination: {
     el: '.swiper-pagination',
     clickable: false,
