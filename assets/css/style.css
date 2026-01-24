@@ -7,7 +7,7 @@ body {
 #wrap {
   margin: 0 auto;
   padding: 0;
-  max-width: 750px;
+  max-width: 850px;
   width: 100%;
   overflow: hidden;
   background-color: #fff;
@@ -15,7 +15,8 @@ body {
 
 #wrap img {
   vertical-align: bottom;
-  max-width: 100%;
+  width: 100%;
+  max-width: 850px;
   height: auto;
 }
 
@@ -53,9 +54,6 @@ body {
 
 .mov {
   position: absolute;
-  width: 80%;
-  left: 10%;
-  bottom: 2.5%;
 }
 
 .txt,
@@ -160,6 +158,15 @@ body {
   font-size: 2.3vw;
 }
 
+
+
+.case-space {
+  background-image: url(../images/benefit-case_02.webp);
+  background-size: 100%;
+  max-height: 38px;
+  height: 5.059vw; /* 43 / 850 * 100 */
+}
+
 @media screen and (min-width: 850px) {
   .case p {
     font-size: 20px;
@@ -182,11 +189,6 @@ body {
   width: 100%;
   text-align: center;
   bottom: 1%;
-}
-
-.case-slider .swiper-wrapper .swiper-slide{
-  width: 90% !important;
-  padding:0  5%;
 }
 
 
@@ -280,7 +282,7 @@ body {
 .sc-case .wrap .img01 {
   width: 87%;
   left: 5.8%;
-  bottom: 69.4%;
+  bottom: 69.3%;
 }
 
 .sc-case .wrap .img02 {
@@ -312,6 +314,11 @@ body {
   width: 100%;
   text-align: center;
   bottom: 25%;
+}
+
+.swiper-wrapper .swiper-slide{
+  width: 90% !important;
+  padding:0  5%;
 }
 
 /*=====================================*/
@@ -437,8 +444,9 @@ body {
   display: flex;
   justify-content: center;
   width: 100% !important;
-  max-width: 750px !important;
+  max-width: 850px !important;
   /* background-color: rgba(245, 215, 0, 0.7); */
+  padding-left: .3%;
 }
 
 .floating-btn.visible {
@@ -448,7 +456,7 @@ body {
 }
 
 .floating-btn img {
-  max-width: 750px;
+  max-width: 850px;
   height: auto;
   display: block;
 }
@@ -456,4 +464,36 @@ body {
 .floating-btn.hide {
   opacity: 0 !important;
   visibility: hidden !important;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-around; /* 均等配置 */
+  align-items: center;
+  flex-wrap: wrap;     
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;            
+  padding: 1.5vw 10px; 
+  background-color: #606060;
+  box-sizing: border-box;     
+  font-size: 2vw;
+}
+
+footer a {
+  color: #b3b3b8;
+  text-decoration: none;
+}
+
+footer div {
+  color: #c2c2d4;
+  text-align: center;
+}
+
+@media screen and (min-width: 850px) {
+  footer {
+    font-size: 15px;
+    padding: 10px 15px; 
+  }
 }
