@@ -1,0 +1,459 @@
+/* ========== Base ========== */
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+}
+
+#wrap {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 750px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#wrap img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+#wrap video {
+  width: 100%;
+}
+
+.wrap {
+  position: relative;
+}
+
+/* ========== Animation ========== */
+.fade-up,
+.fade-down,
+.fadein-blur {
+  opacity: 0;
+}
+
+.fadein-up-active {
+  animation: fadeUPAnime 1.5s forwards;
+}
+
+@keyframes fadeUPAnime {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.mov {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 2.5%;
+}
+
+.txt,
+.txt2 {
+  position: absolute;
+}
+
+.img01,
+.img02,
+.img03,
+.img04,
+.img05 {
+  position: absolute;
+}
+
+/* ========== Sections ========== */
+.fv {
+  position: relative;
+}
+
+.fv .txt-copy {
+  position: absolute;
+  width: 25.7%;
+  left: 3%;
+  bottom: 54%;
+  opacity: 0;
+  transform: translateY(15%);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fv .txt-copy.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== campaign ========== */
+.campaign {
+  position: relative;
+}
+
+.campaign .img01 {
+  width: 90.1%;
+  left: 4.5%;
+  bottom: 59.5%;
+}
+
+.campaign .img02 {
+  bottom: 2.2vw;
+}
+
+.campaign .img03 {
+  bottom: 62%;
+}
+
+
+@media screen and (min-width: 850px) {
+  .campaign .img02 {
+    bottom: 18px;
+  }
+}
+
+/*=====================================*/
+/* ========== results ========== */
+.results-01 .img01 {
+  width: 83.5%;
+  left: 8.25%;
+  bottom: 33%;
+  mix-blend-mode: multiply;
+}
+
+.results-01 .img02 {
+  width: 71.5%;
+  left: 14.25%;
+  bottom: 3%;
+  mix-blend-mode: multiply;
+}
+
+.benefit01 .img01 {
+  width: 30.9%;
+  left: 2.8%;
+  bottom: 28%;
+}
+
+.benefit01 .img02 {
+  width: 61.5%;
+  right: -2%;
+  bottom: 3%;
+}
+
+.case .mov {
+  width: 73.8%;
+  left: 13.1%;
+  bottom: 11.6%;
+}
+
+.case p {
+  position: absolute;
+  bottom: 39%;
+  left: 15%;
+  color: #f1f1f1;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 2.3vw;
+}
+
+@media screen and (min-width: 850px) {
+  .case p {
+    font-size: 20px;
+  }
+
+  .sc-case .wrap p {
+    font-size: 20px;
+  }
+}
+
+
+/*=====================================*/
+/* ========== 症例のカルセール ========== */
+.case-slider {
+  position: relative;
+}
+
+.case-slider .swiper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 1%;
+}
+
+.case-slider .swiper-wrapper .swiper-slide{
+  width: 90% !important;
+  padding:0  5%;
+}
+
+
+/*=====================================*/
+/* ========== trouble ========== */
+.trouble .wrap .img01 {
+  width: 35.5%;
+  right: -2.4%;
+  bottom: 40%;
+  mix-blend-mode: color-burn;
+}
+
+.trouble .wrap .img02 {
+  width: 35.5%;
+  left: -3.4%;
+  bottom: 0%;
+  mix-blend-mode: multiply;
+}
+
+.benefit02 .img01 {
+  width: 30.9%;
+  left: 2.8%;
+  bottom: 23.5%;
+}
+
+.benefit02 .img02 {
+  width: 61.5%;
+  right: -2%;
+  bottom: 3%;
+}
+
+
+/*=====================================*/
+/* ========== POINT========== */
+
+.point .img01 {
+  bottom: 70%;
+  width: 95%;
+  left: 2.5%;
+}
+
+.point1 .mov {
+  width: 73.5%;
+  left: 13%;
+  bottom: 6%;
+}
+
+.point .img02 {
+  width: 95%;
+  left: 2.5%;
+  bottom: 35%;
+}
+
+.point .img03 {
+  bottom: .7%;
+  width: 95%;
+  left: 2.5%;
+}
+
+.point .img04 {
+  bottom: 0%;
+  width: 100%;
+  left: 0%;
+}
+
+/*=====================================*/
+/* ========== comparison ========== */
+.comparison .wrap .img01 {
+  width: 52%;
+  left: 24%;
+  bottom: 28%;
+}
+
+/*=====================================*/
+/* ========== sc-case ========== */
+.sc-case .wrap .mov {
+  width: 80%;
+  left: 10.1%;
+  bottom: 4.2%;
+}
+
+.sc-case .wrap p {
+  position: absolute;
+  left: 12%;
+  bottom: 4%;
+  color: #f1f1f1;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 2.3vw;
+}
+
+.sc-case .wrap .img01 {
+  width: 87%;
+  left: 5.8%;
+  bottom: 69.4%;
+}
+
+.sc-case .wrap .img02 {
+  width: 87%;
+  left: 5.8%;
+  bottom: 37.9%;
+}
+
+.sc-case .wrap .img03 {
+  width: 87%;
+  left: 5.8%;
+  bottom: 6.8%;
+}
+
+.sc-case .wrap .img04 {
+  width: 87%;
+  left: 5.8%;
+  bottom: 1.5%;
+}
+
+/*=====================================*/
+/* ========== 料金ののカルセール ========== */
+.price-slider {
+  position: relative;
+}
+
+.price-slider .swiper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 25%;
+}
+
+/*=====================================*/
+/* ========== キャンペーン詳細 ========== */
+.campaign2 .wrap .img01 {
+  width: 90.1%;
+  left: 4.5%;
+  bottom: 53.6%;
+}
+
+.campaign2 .wrap .img02 {
+  width: 88%;
+  left: 6%;
+  bottom: .5%;
+}
+
+.campaign2 .wrap .img03 {
+  width: 100%;
+  left: 0;
+  bottom: 56.5%;
+}
+
+.benefit-03 {
+  position: relative;
+}
+
+.benefit-03 .img01 {
+  width: 37.7%;
+  left: 3%;
+  bottom: 23.7%;
+}
+
+.benefit-03 .img02 {
+  width: 61.5%;
+  right: -2%;
+  bottom: 3%;
+}
+
+.cta-wrap {
+  position: relative;
+}
+
+.cta-wrap .img01 {
+  left: 5%;
+  bottom: 2%;
+
+}
+
+/*=====================================*/
+/* ========== flow 施術の流れ ========== */
+.flow .wrap .img01,
+.flow .wrap .img02,
+.flow .wrap .img03,
+.flow .wrap .img04,
+.flow .wrap .img05 {
+  width: 86%;
+  left: 7.4%;
+}
+
+.flow .wrap .img01 {
+  bottom: 81.3%;
+}
+
+
+.flow .wrap .img02 {
+  bottom: 62.3%;
+}
+
+.flow .wrap .img03 {
+  bottom: 41.7%;
+}
+
+.flow .wrap .img04 {
+  bottom: 21%;
+}
+
+.flow .wrap .img05 {
+  bottom: 2%;
+}
+
+
+/*=====================================*/
+/* ==========　message ========== */
+.message .wrap .img01 {
+  bottom: 5%;
+}
+
+
+
+.btn {
+  width: 91%;
+  left: 5%;
+  bottom: 8%;
+  animation: flare-scale-btn 2s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes flare-scale-btn {
+  0% {
+    transform: scale(1);
+    /* 通常サイズ */
+  }
+
+  50% {
+    transform: scale(1.1);
+    /* 拡大 */
+  }
+
+  100% {
+    transform: scale(1);
+    /* 元に戻る */
+  }
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 0%;
+  margin: 0 auto;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+  max-width: 750px !important;
+  /* background-color: rgba(245, 215, 0, 0.7); */
+}
+
+.floating-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.floating-btn img {
+  max-width: 750px;
+  height: auto;
+  display: block;
+}
+
+.floating-btn.hide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
