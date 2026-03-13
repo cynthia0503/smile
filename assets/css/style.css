@@ -78,7 +78,7 @@ body {
   position: absolute;
   width: 25.7%;
   left: 3%;
-  bottom: 54%;
+  bottom: 55%;
   opacity: 0;
   transform: translateY(15%);
   transition: opacity 1.2s ease-out, transform 1.2s ease-out;
@@ -105,7 +105,7 @@ body {
 }
 
 .campaign .img03 {
-  bottom: 62%;
+  top:0;
 }
 
 
@@ -113,6 +113,7 @@ body {
   .campaign .img02 {
     bottom: 18px;
   }
+
 }
 
 /*=====================================*/
@@ -338,7 +339,7 @@ body {
 .campaign2 .wrap .img03 {
   width: 100%;
   left: 0;
-  bottom: 56.5%;
+  top:0;
 }
 
 .benefit-03 {
@@ -399,14 +400,11 @@ body {
   bottom: 2%;
 }
 
-
 /*=====================================*/
 /* ==========　message ========== */
 .message .wrap .img01 {
   bottom: 5%;
 }
-
-
 
 .btn {
   width: 91%;
@@ -465,7 +463,6 @@ body {
   opacity: 0 !important;
   visibility: hidden !important;
 }
-
 
 footer {
   display: flex;
